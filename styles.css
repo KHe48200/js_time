@@ -1,0 +1,60 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+section {
+    margin-bottom: 2.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex; 
+    justify-content: center;
+}
+
+#monthandyear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#weekdays, #dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#dates {
+    font-weight: bold;
+}
+#dates li {
+    padding: 1em 0;
+}
+
+.today {
+    border: black solid 2px;
+}
+
+#clock, #timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+input[type="text"], button {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    border: 0;
+    background-color: white;
+}
+
+input[type="text"] {
+    width: 2rem;
+}
